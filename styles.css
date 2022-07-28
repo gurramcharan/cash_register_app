@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
 
-:root{
-    --primary-color:#2bbde9;
-    --secondary-color:#251cd8;
-    --tertiary-color:#ffffff;
+:root {
+    --primary-color: #2bbde9;
+    --secondary-color: #251cd8;
+    --tertiary-color: #ffffff;
 }
 
-*{
+* {
     font-family: 'Tapestry', cursive;
     letter-spacing: 1px;
     margin: 0;
@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 
-.main{
+.main {
     width: 100%;
     max-width: 500px;
     min-height: 200px;
@@ -22,17 +22,23 @@
     margin: auto;
     background-color: var(--primary-color);
     padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.subtext{
+
+.subtext {
     margin-top: 1rem;
     font-size: .9rem;
 }
 
-h1,h4{
+h1,
+h4 {
     color: var(--tertiary-color)
 }
 
-.label{
+.label {
     font-size: 1.3rem;
     padding: 1.5rem 1rem 0.5rem;
     color: var(--secondary-color);
@@ -49,7 +55,7 @@ input {
     background-color: var(--tertiary-color);
 }
 
-.btn{
+.btn {
     padding: 0.5rem 1rem;
     display: block;
     font-size: .9rem;
@@ -61,29 +67,31 @@ input {
     font-weight: bold;
 }
 
-.cashGivenInput{
+.cashGivenInput {
     display: none;
 }
 
-.returnChange{
+.returnChange {
     display: none;
 }
 
-.errorMsg{
+.errorMsg {
     padding-top: 1rem;
     color: var(--tertiary-color);
 }
 
-.output{
+.output {
     margin: 1rem 0;
 }
 
-table{
+table {
     width: 100%;
     table-layout: fixed;
 }
 
-.output table, th, td{
+.output table,
+th,
+td {
     padding: .2rem;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
@@ -91,8 +99,44 @@ table{
     border-collapse: collapse;
 }
 
-
-
-.noOfNotes{
+.noOfNotes {
     font-weight: bold;
+}
+
+.footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: black;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer .link {
+    color: black;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+
+}
+
+.container {
+    padding: 0rem 1rem;
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
 }
